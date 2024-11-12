@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+  text-align: center;
+  background-color: #1c1c1e;
+  font-family: 'Press Start 2P', cursive;
+  color: #F1F1F1;
+}
+
+/* Level Title Button */
+#level-title {
+  font-size: 2rem;
+  color: #F1F1F1;
+  padding: 15px 30px;
+  margin: 3% auto;
+  background-color: #333;
+  border: 2px solid #FFD700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#level-title:hover {
+  background-color: #444;
+  color: #FFD700;
+}
+
+/* High Score Display */
+#high-score {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #FFD700;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  font-family: 'Press Start 2P', cursive;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Button Colors and Shape */
+.btn {
+  margin: 20px;
+  height: 180px;
+  width: 180px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.1s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.red {
+  background-color: #FF6B6B;
+}
+
+.green {
+  background-color: #72e99c;
+}
+
+.blue {
+  background-color: #54a0ff;
+}
+
+.yellow {
+  background-color: #d0fd08;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: #d1d1d1;
+}
+
+/* Game Over Effect */
+.game-over {
+  background-color: #ff4d4d;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #level-title {
+    font-size: 1.5rem;
+    padding: 12px 25px;
+  }
+
+  .btn {
+    height: 140px;
+    width: 140px;
+    margin: 15px;
+  }
+
+  #high-score {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #level-title {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 20%;
+  }
+
+  #high-score {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
